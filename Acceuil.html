@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webinaire — Trading & Développement Web</title>
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+
+  <!-- Thème Tailwind (couleurs) -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#041521",
+            primary: "#4deef5",
+            "primary-cta": "#16d1d8",
+            surface: "#11212d",
+            "surface-2": "#1c2c38",
+            "surface-3": "#0c1d29",
+            "text-main": "#d4e4f6",
+            "text-muted": "#bac9ca",
+            outline: "#3b494a"
+          },
+          fontFamily: {
+            headline: ["Space Grotesk", "system-ui", "sans-serif"],
+            body: ["Inter", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Styles custom -->
+  ./styles.css
+</head>
+
+<body class="bg-background text-text-main font-body selection:bg-primary selection:text-background">
+  <!-- Top Bar -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur border-b border-outline/20">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">terminal</span>
+        <span class="font-headline font-bold tracking-tight">QUANTUM TERMINAL</span>
+      </div>
+      <a href="#inscription"><button type="submit">
+          #inscription
+          JE M’INSCRIS
+        </button></a>
+      </a>
+    </nav>
+  </header>
+
+  <main class="pt-20">
+    <!-- HERO -->
+    <section class="relative px-6 py-16 md:py-24 overflow-hidden trading-bg">
+      <div aria-hidden="true" class="absolute inset-0 opacity-10 pointer-events-none">
+        <svg class="w-full h-full stroke-primary fill-none" viewBox="0 0 1000 400">
+          <path d="M0 350 L100 320 L200 360 L350 240 L500 280 L650 120 L800 180 L1000 40" stroke-width="2"></path>
+        </svg>
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface/40 border border-outline/30 mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">WEBINAIRE EN DIRECT</span>
+        </div>
+
+        <h1 class="text-4xl md:text-7xl font-headline font-bold tracking-tighter leading-none mb-6">
+          TRADING &amp; DÉVELOPPEMENT WEB
+        </h1>
+        <p class="text-lg md:text-xl text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+          Comprendre les bases, progresser et maîtriser les outils du futur.
+        </p>
+
+        <div class="flex flex-wrap gap-3 justify-center mb-12">
+          <span class="badge"><span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+            Vendredi 18 avril 2026</span>
+          <span class="badge"><span class="material-symbols-outlined text-primary text-sm">schedule</span> 21h00
+            (GMT+1)</span>
+          <span class="badge"><span class="material-symbols-outlined text-primary text-sm">videocam</span> Google
+            Meet</span>
+          <span class="badge price"><span class="material-symbols-outlined text-primary text-sm">payments</span> 2500
+            FCFA</span>
+        </div>
+
+        <a href="#inscription"><button type="submit">
+            #inscription
+            Je m’inscris
+          </button></a>
+        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- POURQUOI PARTICIPER -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>POURQUOI PARTICIPER&nbsp;?</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="card">
+            <div class="icon"><span class="material-symbols-outlined text-primary">visibility</span></div>
+            <h3>Vision claire</h3>
+            <p>Démystification des marchés financiers et du web moderne avec une approche structurée.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon"><span class="material-symbols-outlined text-primary">build</span></div>
+            <h3>Concret &amp; réaliste</h3>
+            <p>Outils, code et stratégies applicables immédiatement — pas de blabla.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon"><span class="material-symbols-outlined text-primary">forum</span></div>
+            <h3>Interactif</h3>
+            <p>Q&amp;A en direct et conseils pratico‑pratiques selon votre profil.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="intervenants" class="py-20 px-6 bg-surface">
+      <div class="container">
+
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-headline font-bold tracking-tight uppercase">
+            LES INTERVENANTS
+          </h2>
+          <p class="text-text-muted mt-2">
+            L’expertise au service de votre progression
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+          <!-- 🔵 INTERVENANT 1 -->
+          <div
+            class="bg-surface-2 rounded-2xl overflow-hidden shadow-xl border border-outline/20 hover:scale-105 transition duration-300">
+
+            <div class="h-80 overflow-hidden">
+              <img src="..\Assets\PrinceB.png" alt="Prince GUY" class="w-full h-full object-cover object-[50%_10%]">
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-bold">ITOUA Prince</h3>
+              <p class="text-primary text-sm mt-1">Trading & Développement</p>
+            </div>
+
+          </div>
+
+          <!-- 🔴 INTERVENANT 2 -->
+          <div
+            class="bg-surface-2 rounded-2xl overflow-hidden shadow-xl border border-outline/20 hover:scale-105 transition duration-300">
+
+            <div class="h-80 overflow-hidden">
+              <img src="..\Assets\ChanceG.png" alt="GANKONOMO Chance" class="w-full h-full object-cover object-[50%_10%]">
+            </div>
+
+            <div class="p-6 text-center">
+              <h3 class="text-xl font-bold">GANKONOMO Chance</h3>
+              <p class="text-primary text-sm mt-1">Finance & Stratégie</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- PROGRAMME -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>LE PROGRAMME</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="step primary">
+            <span class="kicker">ÉTAPE 01</span>
+            <h3>Fondations du Trading</h3>
+            <p>Écosystème financier et leviers psychologiques.</p>
+          </div>
+
+          <div class="step">
+            <span class="kicker">ÉTAPE 02</span>
+            <h3>Le Web Moderne</h3>
+            <p>Pourquoi le développement web est la compétence clé de la décennie.</p>
+          </div>
+
+          <div class="step">
+            <span class="kicker">ÉTAPE 03</span>
+            <h3>Synergie Trading &amp; Code</h3>
+            <p>Automatiser ses stratégies et créer ses propres outils.</p>
+          </div>
+
+          <div class="step">
+            <span class="kicker">ÉTAPE 04</span>
+            <h3>Démonstration Live</h3>
+            <p>Analyse de graphiques & revue de code en temps réel.</p>
+          </div>
+
+          <div class="step">
+            <span class="kicker">ÉTAPE 05</span>
+            <h3>Q&amp;A et Roadmap</h3>
+            <p>Questions/réponses et plan d’action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSCRIPTION -->
+    <section id="inscription" class="py-20 px-6 bg-surface">
+      <div class="max-w-4xl mx-auto">
+        <div class="rounded-2xl overflow-hidden shadow-2xl border border-outline/20">
+          <div
+            class="p-8 text-center bg-[linear-gradient(120deg,rgba(22,209,216,.15),rgba(77,238,245,.08))] border-b border-outline/20">
+            <h2 class="text-3xl font-headline font-bold mb-2">RÉSERVEZ VOTRE PLACE</h2>
+            <p class="text-text-muted text-sm">Session exclusive — places limitées.</p>
+          </div>
+
+          <form id="signupForm" class="p-8 md:p-12 space-y-6" novalidate>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="fullName" class="label">Nom complet</label>
+                <input id="fullName" name="fullName" type="text" class="input" placeholder="Votre nom" required />
+                <small class="error" data-for="fullName"></small>
+              </div>
+
+              <div>
+                <label for="whatsapp" class="label">Numéro WhatsApp</label>
+                <input id="whatsapp" name="whatsapp" type="tel" class="input" placeholder="+242 ..." required />
+                <small class="error" data-for="whatsapp"></small>
+              </div>
+            </div>
+
+            <div>
+              <label for="email" class="label">Email professionnel</label>
+              <input id="email" name="email" type="email" class="input" placeholder="email@exemple.com" required />
+              <small class="error" data-for="email"></small>
+            </div>
+
+            <div class="flex flex-col gap-3 pt-2">
+              <a href="https://wa.me/242069180533"></a><button type="submit" class="btn-primary w-full">Valider mon
+                inscription</button>
+              <a href="https://chat.whatsapp.com/CghJgOE6AB9KqnaMeMWfer" target="_blank"
+                class="btn-outline w-full text-center block">
+                Réjoindre le groupe WhatsApp
+              </a>
+              <p class="disclaimer">Inscription prise en charge une fois le paiement effectué</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-headline font-bold tracking-tight">QUESTIONS FRÉQUENTES</h2>
+        </div>
+
+        <div class="space-y-4">
+          <details class="faq">
+            <summary>Est‑ce accessible aux débutants&nbsp;?</summary>
+            <p>Oui, nous partons des bases avant de monter en complexité.</p>
+          </details>
+
+          <details class="faq">
+            <summary>Comment accéder au Meet&nbsp;?</summary>
+            <p>Les instructions vous sont envoyées par email et WhatsApp avant la session.</p>
+          </details>
+
+          <details class="faq">
+            <summary>Comment s’effectue le paiement&nbsp;?</summary>
+            <p>Le règlement de 2500 FCFA se fait via Mobile Money après validation.</p>
+          </details>
+
+          <details class="faq">
+            <summary>Y aura‑t‑il un replay&nbsp;?</summary>
+            <p>Oui, un lien vers l’enregistrement est transmis aux participants inscrits.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-background border-t border-outline/20 py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="font-headline font-bold">QUANTUM TERMINAL</div>
+      <nav class="flex gap-6 text-sm text-text-muted">
+        #inscriptionINSCRIPTION</a>
+        #inscriptionPROGRAMME</a>
+        #inscriptionINTERVENANTS</a>
+        #inscriptionFAQ</a>
+      </nav>
+      <p class="text-[10px] tracking-widest uppercase opacity-60">© 2026 — Trading & Développement Web.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+
+</html>
